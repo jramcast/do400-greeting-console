@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label "jenkins-agent-node-14"
+        label "nodejs"
     }
     stages{
         stage("Install dependencies"){
@@ -21,6 +21,10 @@ pipeline{
             }
         }
 
-        // Add the Release stage here
+        stage("Release") {
+            steps{
+                echo "TODO"
+            }
+        }
     }
 }
